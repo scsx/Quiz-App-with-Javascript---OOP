@@ -4,9 +4,56 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
-<title>Document</title>
+<title>Quiz</title>
+<link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,700" rel="stylesheet">
+<link rel="stylesheet" href="external-libraries/spectre/dist/spectre.min.css">
+<link rel="stylesheet" href="external-libraries/spectre/dist/spectre-exp.min.css">
+<link rel="stylesheet" href="external-libraries/spectre/dist/spectre-icons.min.css">
+<link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
-    
+    <div class="container grid-md">
+        <div class="columns">
+            <div class="column col-12">
+                <div id="quiz">
+                    <h1>Quiz História de Portugal</h1>
+                    <hr>
+                    <div id="dashboard">
+                        <blockquote>
+                            <h3 id="question"></h3>
+                        </blockquote>
+                    
+                        <div class="buttons">
+                            <div class="columns">
+                                <div class="column col-6">
+                                    <button class="btn btn-primary" id="btn0"><span id="choice0"></span></button>
+                                </div>
+                                <div class="column col-6">
+                                    <button class="btn btn-primary" id="btn1"><span id="choice1"></span></button>
+                                </div>
+                            </div>
+                            <div class="columns">
+                                <div class="column col-6">
+                                    <button class="btn btn-primary" id="btn2"><span id="choice2"></span></button>
+                                </div>
+                                <div class="column col-6">
+                                    <button class="btn btn-primary" id="btn3"><span id="choice3"></span></button>
+                                </div>
+                            </div>
+                        </div>
+                        <hr class="bottom">
+                        <footer>
+                            <p id="progress">Question x of y</p>
+                        </footer>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<script src="assets/quiz_controller.js"></script>
+<script src="assets/question.js"></script>
+<script src="assets/app.js"></script>
+
 </body>
 </html>
