@@ -5,6 +5,9 @@ function Quiz(questions) {
     this.questionIndex = 0;
 }
 
+// Esta funções parecem estar aqui como boa práctica para não consumir memória:
+// https://www.udemy.com/javascript-object-oriented-programming/learn/lecture/10019964#overview
+
 Quiz.prototype.getQuestionIndex = function() {
     return this.questions[this.questionIndex];
 }
