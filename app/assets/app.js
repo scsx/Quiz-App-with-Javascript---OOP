@@ -7,19 +7,15 @@ function populate() {
     } else {
         // show question text
         element.innerHTML = quiz.getQuestionIndex().text;
-        
         // show choices
         var choices = quiz.getQuestionIndex().choices;
         for(var i = 0; i < choices.length; i++) {
             var btnElement = document.getElementById("choice" + i);
             btnElement.innerHTML = choices[i];
-
             // validate answer
             guess("btn" + i, choices[i]);
         }
-
         showProgress();
-
     }
 }
 
@@ -49,8 +45,6 @@ function showProgress() {
     var elementProgress = document.getElementById("progress");
     elementProgress.innerHTML = "Question " + currentQuestionNumber + " of " + quiz.questions.length;
 }
-
-//console.log( quiz.getQuestionIndex() );
 
 // create questions
 var questions = [
